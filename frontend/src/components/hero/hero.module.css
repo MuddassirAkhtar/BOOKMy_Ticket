@@ -1,0 +1,61 @@
+.heroContainer{
+height:20rem;
+width:100%;
+padding:1rem;
+display:flex;
+gap:2rem;
+overflow-x: auto;
+position: relative;
+}
+
+.heroContainer::-webkit-scrollbar {
+  display: none; 
+}
+.img1,.img2{
+flex:0 0 80% ;
+height:100%;
+border-radius: 1rem;
+overflow: hidden;
+cursor: pointer;
+}
+.img1{
+          background-image: url("https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1759491203563_lollaweb.jpg");
+
+}
+.img2{
+          background-image: url("https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1759754240366_webbanner1240x300.jpg");
+
+}
+
+.heroContainer button {
+position: fixed;
+height:3rem;
+width:3rem;
+background-color: rgba(0, 0, 0, 0.296);
+cursor: pointer;
+border:none;
+border-radius: 5px;
+}
+
+.btn1{
+color:white;
+text-align: center;
+font-size: 2rem;
+top:30%;
+left:1px;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+.btn2{
+
+color:white;
+text-align: center;
+font-size: 2rem;
+top:30%;
+right:1px;
+display:flex;
+align-items: center;
+justify-content: center;
+}

@@ -1,0 +1,24 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+/* index.css */
+:root {
+  /* Colors */
+  --primary-color: #FFFFFF;
+  --secondary-color: #333338;
+  --bold-text-color: #222222;
+  --light-text-color: #666666;
+  --bg-color: #f2f5f9;
+
+  /* Spacing */
+  --padding-base: 1rem;
+  --margin-base: 1rem;
+  --border-radius: 8px;
+
+  /* Flexbox */
+  --flex-center: center;
+  --flex-between: space-between;
+  --flex-around: space-around;
+}

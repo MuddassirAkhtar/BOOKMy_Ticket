@@ -1,0 +1,169 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "language": "English",
+      "genre": "Sci-Fi",
+      "duration": "2h 28m",
+      "rating": 8.8,
+      "price": 250,
+      "poster": "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg",
+      "description": "A thief who enters people's dreams and steals their secrets gets a chance to erase his criminal past.",
+      "category": "Action",
+      "releaseDate": "2010-07-16"
+    },
+    {
+      "id": 2,
+      "title": "Jawan",
+      "language": "Hindi",
+      "genre": "Action, Thriller",
+      "duration": "2h 49m",
+      "rating": 8.1,
+      "price": 220,
+      "poster": "https://image.tmdb.org/t/p/w500/jawan.jpg",
+      "description": "A man on a mission to right the wrongs of society, taking on corruption and injustice.",
+      "category": "Bollywood",
+      "releaseDate": "2023-09-07"
+    },
+    {
+      "id": 3,
+      "title": "Avatar: The Way of Water",
+      "language": "English",
+      "genre": "Fantasy, Adventure",
+      "duration": "3h 12m",
+      "rating": 7.9,
+      "price": 300,
+      "poster": "https://image.tmdb.org/t/p/w500/5ScPNT6fHtfYJeWBajZciPV3hEL.jpg",
+      "description": "Jake Sully and Ney’tiri must protect their family and explore Pandora’s oceans.",
+      "category": "Hollywood",
+      "releaseDate": "2022-12-16"
+    },
+    {
+      "id": 4,
+      "title": "RRR",
+      "language": "Telugu",
+      "genre": "Action, Drama",
+      "duration": "3h 7m",
+      "rating": 8.5,
+      "price": 240,
+      "poster": "https://image.tmdb.org/t/p/w500/d1oD7cC4rG7YQj2YLB5Q0aQfUwW.jpg",
+      "description": "Two revolutionaries fight against British rule in India, forming an unbreakable bond.",
+      "category": "Tollywood",
+      "releaseDate": "2022-03-25"
+    },
+    {
+      "id": 5,
+      "title": "Spider-Man: No Way Home",
+      "language": "English",
+      "genre": "Action, Superhero",
+      "duration": "2h 28m",
+      "rating": 8.2,
+      "price": 270,
+      "poster": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+      "description": "Peter Parker seeks Doctor Strange's help to make the world forget his identity as Spider-Man.",
+      "category": "Superhero",
+      "releaseDate": "2021-12-17"
+    },
+    {
+      "id": 6,
+      "title": "Leo",
+      "language": "Tamil",
+      "genre": "Action, Thriller",
+      "duration": "2h 44m",
+      "rating": 7.6,
+      "price": 230,
+      "poster": "https://image.tmdb.org/t/p/w500/leomovieposter.jpg",
+      "description": "A peaceful café owner’s life takes a violent turn when his dark past resurfaces.",
+      "category": "Kollywood",
+      "releaseDate": "2023-10-19"
+    }
+  ],
+
+  "theaters": [
+    {
+      "id": 1,
+      "name": "PVR Cinemas",
+      "location": "Mumbai",
+      "screens": [
+        {
+          "screenId": 1,
+          "movieId": 1,
+          "showTimes": ["10:00 AM", "2:00 PM", "6:00 PM", "9:30 PM"],
+          "availableSeats": 80
+        },
+        {
+          "screenId": 2,
+          "movieId": 3,
+          "showTimes": ["11:00 AM", "3:30 PM", "8:00 PM"],
+          "availableSeats": 100
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "INOX Multiplex",
+      "location": "Delhi",
+      "screens": [
+        {
+          "screenId": 1,
+          "movieId": 2,
+          "showTimes": ["9:30 AM", "1:00 PM", "5:00 PM", "8:30 PM"],
+          "availableSeats": 90
+        },
+        {
+          "screenId": 2,
+          "movieId": 5,
+          "showTimes": ["10:00 AM", "2:30 PM", "7:00 PM"],
+          "availableSeats": 75
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Cinepolis",
+      "location": "Bangalore",
+      "screens": [
+        {
+          "screenId": 1,
+          "movieId": 4,
+          "showTimes": ["12:00 PM", "4:00 PM", "9:00 PM"],
+          "availableSeats": 120
+        },
+        {
+          "screenId": 2,
+          "movieId": 6,
+          "showTimes": ["11:30 AM", "3:00 PM", "6:30 PM", "10:00 PM"],
+          "availableSeats": 85
+        }
+      ]
+    }
+  ],
+
+  "bookings": [
+    {
+      "id": 1,
+      "ticketId": "TCK12345",
+      "movieId": 1,
+      "theaterId": 1,
+      "screenId": 1,
+      "showTime": "6:00 PM",
+      "seats": ["B5", "B6"],
+      "price": 500,
+      "user": "John Doe",
+      "date": "2025-10-21"
+    },
+    {
+      "id": 2,
+      "ticketId": "TCK56789",
+      "movieId": 2,
+      "theaterId": 2,
+      "screenId": 1,
+      "showTime": "8:30 PM",
+      "seats": ["C1", "C2", "C3"],
+      "price": 660,
+      "user": "Aisha Khan",
+      "date": "2025-10-21"
+    }
+  ]
+}
