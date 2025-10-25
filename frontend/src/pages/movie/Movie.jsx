@@ -1,8 +1,10 @@
 import React from 'react'
-
+import styles from "./movies.module.css"
 const Movie = () => {
   return (
-    <div>Movie</div>
+    <div>
+      
+    </div>
   )
 }
 

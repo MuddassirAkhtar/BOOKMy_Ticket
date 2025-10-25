@@ -16,4 +16,4 @@ reducers:{
 })
 
 export default  movieSlice.reducer
-export const {action} = movieSlice.actions
+export const {loadmovie} = movieSlice.actions

@@ -32,10 +32,10 @@ const Hero = () => {
       <div className={styles.img2}></div>
       <div className={styles.img1}></div>
       
-      <button className={styles.btn1} onClick={scrollLeft}><IoIosArrowBack />
+      {/* <button className={styles.btn1} onClick={scrollLeft}><IoIosArrowBack />
 </button>
       <button className={styles.btn2} onClick={scrollRight}><IoIosArrowForward />
- </button>
+ </button> */}
 
 
     </div>
