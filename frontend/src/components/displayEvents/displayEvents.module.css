@@ -1,0 +1,79 @@
+.container {
+min-height: 100vh;
+width:100%;
+padding:1rem;
+display:flex;
+}
+.filterSection{
+width:20%;
+/* background-color: red; */
+padding:1rem;
+
+}
+.eventContainer{
+width:80%;
+padding:1rem;
+}
+
+.event{
+display:flex;
+align-items: center;
+gap:2rem;
+justify-content: space-evenly;
+flex-wrap: wrap;
+padding: 1rem;
+}
+
+.card{
+height:40rem;
+width:30%;     
+display:flex;
+align-items: center;
+flex-direction: column;
+gap:0.5rem;
+padding: 1rem;
+
+}
+
+.imgCnt{
+flex:1;
+height:80%;
+width: 100%;
+border-radius: 10px;
+overflow: hidden;
+position: relative;
+
+}
+.imgCnt img {
+height:100%;
+width:100%;
+object-fit: cover;
+object-position: center;
+/* border: 1px solid black; */
+}
+.rating{
+position: absolute;
+bottom:0;
+/* z-index: 12; */
+padding: 0.5rem;
+width:100%;
+height:7%;
+color:crimson;
+background-color: black;
+}
+.info{
+height:15%;
+width:90%;
+
+}
+
+.info h1 {
+font-size: 1.5rem;
+}
+
+.detail{
+display:flex;
+align-items: center;
+justify-content: space-between;
+color:var( --light-text-color)
+}

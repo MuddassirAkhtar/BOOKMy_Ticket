@@ -11,6 +11,10 @@ justify-content: space-between;
 padding: var(--padding-base);
 }
 
+.sec1 h1 {
+cursor: pointer;
+}
+
 .searchBar{
 width:50rem;
 display:flex;

@@ -1,9 +1,14 @@
 import React from 'react'
 import styles from "./movies.module.css"
+import DisplayEvents from "../../components/displayEvents/DisplayEvents"
+import { useSelector } from 'react-redux'
+
 const Movie = () => {
+const movies = useSelector((state)=> state.movieReducer.movie)
+
   return (
     <div>
-      
+      <DisplayEvents title="Movie" data={movies} />
     </div>
   )
 }

@@ -1,8 +1,14 @@
 import React from 'react'
+import DisplayEvents from "../../components/displayEvents/DisplayEvents"
+import { useSelector } from 'react-redux'
 
 const Event = () => {
+  const events = useSelector((state)=> state.eventReducer.event)
+
   return (
-    <div>Event</div>
+    <div>
+      <DisplayEvents title="Events" data={events} />
+    </div>
   )
 }
 

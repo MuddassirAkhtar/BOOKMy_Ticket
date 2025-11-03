@@ -2,11 +2,13 @@ import React from 'react'
 import styles from "./home.module.css"
 import Scrollsection from '../../components/scrollSection/Scrollsection'
 import { useSelector } from 'react-redux'
+
 const Home = () => {
+
+
            const movies =  useSelector((state)=> state.movieReducer.movie)
            const events =  useSelector((state)=> state.eventReducer.event)
            const sports =  useSelector((state)=> state.sportsReducer.sports)
-           console.log(sports)
   
   return (
     <div className={styles.homeContainer}>
