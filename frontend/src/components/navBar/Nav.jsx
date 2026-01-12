@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from "react-router"
-import { RxHamburgerMenu } from "react-icons/rx";
 import { IoSearchOutline } from "react-icons/io5";
 import { useNavigate } from 'react-router';
 import { useDispatch } from 'react-redux';
@@ -46,7 +45,6 @@ const Nav = () => {
           
           
 
-        {/* <RxHamburgerMenu  className={styles.hamburger} /> */}
         
         
         </div>

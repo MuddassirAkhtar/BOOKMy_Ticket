@@ -1,9 +1,14 @@
 import React from 'react'
 import styles from "./displayEvents.module.css"
 import { IoIosStar } from "react-icons/io";
+import { useNavigate } from "react-router";
+import { ROUTES } from '../../route';
 
 
 const DisplayEvents = ({title ,data}) => {
+
+  const navigate = useNavigate();
+
   return (
     <div className={styles.container}>
       <div className={styles.filterSection}>
@@ -17,7 +22,7 @@ const DisplayEvents = ({title ,data}) => {
         <h1>{title} in CITY</h1>
         <div className={styles.event}>
           {data.map((events,index)=>(
-            <div key={index} className={styles.card}>
+            <div key={events.id} className={styles.card}  onClick={() => navigate(`/event/${title}/${events.id}`)} >
               <div className={styles.imgCnt}><img src={events.poster} alt="" />
               <div className={styles.rating}> {events.rating ? <><IoIosStar /> {events.rating}</> : <>{events.date}</>}</div>
               </div>

@@ -8,7 +8,7 @@ const movies = useSelector((state)=> state.movieReducer.movie)
 
   return (
     <div>
-      <DisplayEvents title="Movie" data={movies} />
+      <DisplayEvents title="Movies" data={movies} />
     </div>
   )
 }

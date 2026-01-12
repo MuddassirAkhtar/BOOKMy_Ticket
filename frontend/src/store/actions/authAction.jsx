@@ -40,7 +40,12 @@ const loggedInUser = data[0];
   }
 };
 
-
+export  const asyncAutoLoginUser = () => async (dispatch) =>{
+  const user = JSON.parse(localStorage.getItem("user"))
+  if(user){
+    dispatch(asyncLoginUser(user));
+  }
+}
 export const asyncLogOutUser = () => async (dispatch,state) =>{
   try{
 

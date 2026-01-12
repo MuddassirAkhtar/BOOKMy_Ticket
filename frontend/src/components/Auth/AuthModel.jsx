@@ -6,6 +6,8 @@ import { useDispatch } from "react-redux";
 import { closeAuthModel } from "../../store/reducer/authSlice";
 import { asyncAddUsers } from "../../store/actions/authAction";
 import { asyncLoginUser } from "../../store/actions/authAction";
+import { ToastContainer, toast } from 'react-toastify';
+
 const AuthModel = () => {
   const [isLogin, setIsLogin] = useState(true);
   const { register, reset, handleSubmit } = useForm();
@@ -23,11 +25,11 @@ const AuthModel = () => {
   };
 
   const loginHandler = (user) => {
-//     console.log("Logging in:", user);
+    // console.log("Logging in:", user);
 dispatch(asyncLoginUser(user))
 dispatch(closeAuthModel());
-
-    reset();
+toast("You have Sucessfully LoggedIn");
+reset();
   };
 
   const registerHandler = (user) => {

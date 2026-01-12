@@ -1,0 +1,24 @@
+.container{
+min-height: calc(100vh - 100px);
+width: 100%;
+display: flex;
+}
+.dashbord{
+width: 15%;
+display: flex;
+flex-direction: column;
+}
+
+.dashbordData{
+   margin-top: 2rem;       
+padding: 0 1rem;
+cursor: pointer;
+display: flex;
+align-items: center;
+gap: 1rem;
+
+}
+
+.displayCont{
+width: 85%;
+}

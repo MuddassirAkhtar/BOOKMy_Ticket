@@ -15,4 +15,4 @@ reducers:{
 })
 
 export default theaterSlice.reducer
-export const {action } = theaterSlice.actions
+export const {loadtheater } = theaterSlice.actions
